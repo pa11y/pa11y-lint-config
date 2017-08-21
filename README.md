@@ -38,13 +38,19 @@ Now you should create `.eslintrc.js` and `.eslintignore` files in your project r
 
 ```sh
 printf "coverage\n" > .eslintignore
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es6');\n" > .eslintrc.js
+printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/2015');\n" > .eslintrc.js
 ```
 
-If your project uses ES5 syntax (should mostly be browser or legacy projects), then you'll need to include `eslint/es5` instead of `eslint/es6`:
+If your project uses ES5 syntax (should mostly be browser or legacy projects), then you'll need to include `eslint/legacy` instead of `eslint/2015`:
 
 ```sh
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es5');\n" > .eslintrc.js
+printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/legacy');\n" > .eslintrc.js
+```
+
+If your project uses more modern syntax (including `async`/`await`), then you'll need to include `eslint/2017` instead of `eslint/2015`:
+
+```sh
+printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/2017');\n" > .eslintrc.js
 ```
 
 If your project contains a mix of ES6 and ES5 (e.g. Node.js and browser) then you can include different config files in each directory.
