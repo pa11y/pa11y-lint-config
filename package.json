@@ -1,6 +1,6 @@
 {
   "name": "pa11y-lint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Linter configurations for Pa11y projects",
   "keywords": [],
   "author": "Team Pa11y",

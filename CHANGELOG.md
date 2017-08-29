@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 1.2.0 (2017-08-29)
+
+  * Make ES2017 warn when strict mode is not used
+
 ## 1.1.0 (2017-08-21)
 
   * Add ES2017 support
