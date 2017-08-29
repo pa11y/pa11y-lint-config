@@ -133,8 +133,8 @@ module.exports = {
 		// Strict Mode
 		// http://eslint.org/docs/rules/#strict-mode
 		strict: [
-			'error',
-			'never'
+			'warn',
+			'safe'
 		],
 
 		// Variables
