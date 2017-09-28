@@ -77,13 +77,13 @@ Copyright &copy; 2017, Team Pa11y
 
 
 [eslint]: http://eslint.org/
-[issues]: https://github.com/pa11y/lint-config/issues
+[issues]: https://github.com/pa11y/pa11y-lint-config/issues
 [node.js]: https://nodejs.org/
 [twitter]: https://twitter.com/pa11yorg
 
 [info-license]: LICENSE
 [info-npm]: https://www.npmjs.com/package/pa11y-ci
-[info-build]: https://travis-ci.org/pa11y/lint-config
+[info-build]: https://travis-ci.org/pa11y/pa11y-lint-config
 [shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue.svg
 [shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config.svg
-[shield-build]: https://img.shields.io/travis/pa11y/lint-config/master.svg
+[shield-build]: https://img.shields.io/travis/pa11y/pa11y-lint-config/master.svg
