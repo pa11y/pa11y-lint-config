@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 1.2.1 (2017-10-03)
+
+  * Fix space-before-function-paren for async functions
+
 ## 1.2.0 (2017-08-29)
 
   * Make ES2017 warn when strict mode is not used
