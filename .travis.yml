@@ -5,7 +5,7 @@ matrix:
   include:
 
     # Run linter
-    - node_js: '6'
+    - node_js: '14'
 
 # Restrict builds on branches
 branches:
