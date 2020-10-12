@@ -15,10 +15,10 @@
   "bugs": "https://github.com/pa11y/lint-config/issues",
   "license": "LGPL-3.0",
   "engines": {
-    "node": ">=4"
+    "node": ">=14"
   },
   "devDependencies": {
-    "eslint": "^3.18.0"
+    "eslint": "^7.11.0"
   },
   "main": "./index.js",
   "scripts": {

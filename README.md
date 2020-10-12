@@ -19,7 +19,7 @@ Linter configurations for Pa11y projects. This module should be used to ensure t
 
 ## Requirements
 
-This library requires [Node.js] 4+.
+This library requires [Node.js] 14+.
 
 
 ## Usage
@@ -72,7 +72,7 @@ make ci
 ## Licence
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
-Copyright &copy; 2017, Team Pa11y
+Copyright &copy; 2020, Team Pa11y
 
 
 
