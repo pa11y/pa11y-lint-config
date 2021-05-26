@@ -5,7 +5,8 @@
   "keywords": [],
   "author": "Team Pa11y",
   "contributors": [
-    "Rowan Manning (http://rowanmanning.com/)"
+    "Rowan Manning (http://rowanmanning.com/)",
+    "José Bolos (https://github.com/josebolos)"
   ],
   "repository": {
     "type": "git",
@@ -15,10 +16,10 @@
   "bugs": "https://github.com/pa11y/lint-config/issues",
   "license": "LGPL-3.0",
   "engines": {
-    "node": ">=14"
+    "node": ">=12"
   },
   "devDependencies": {
-    "eslint": "^7.11.0"
+    "eslint": "^7.27.0"
   },
   "main": "./index.js",
   "scripts": {
