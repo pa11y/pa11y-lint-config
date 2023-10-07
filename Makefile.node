@@ -1,14 +1,3 @@
-#
-# Node.js Makefile
-# ================
-#
-# Do not update this file manually – it's maintained separately on GitHub:
-# https://github.com/rowanmanning/makefiles/blob/master/Makefile.node
-#
-# To update to the latest version, run `make update-makefile`.
-#
-
-
 # Meta tasks
 # ----------
 
@@ -115,11 +104,3 @@ test-unit-coverage:
 
 test-integration:
 	@if [ -d test/integration ]; then mocha test/integration --timeout $(INTEGRATION_TIMEOUT) --slow $(INTEGRATION_SLOW) && $(TASK_DONE); fi
-
-
-# Tooling tasks
-# -------------
-
-update-makefile:
-	@curl -s https://raw.githubusercontent.com/rowanmanning/makefiles/master/Makefile.node > Makefile.node
-	@$(TASK_DONE)
