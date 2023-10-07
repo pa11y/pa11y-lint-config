@@ -76,7 +76,6 @@ Copyright &copy; 2023, Team Pa11y
 [eslint]: http://eslint.org/
 [issues]: https://github.com/pa11y/pa11y-lint-config/issues
 [node.js]: https://nodejs.org/
-[twitter]: https://twitter.com/pa11yorg
 
 [info-license]: LICENSE
 [info-npm]: https://www.npmjs.com/package/pa11y-ci
