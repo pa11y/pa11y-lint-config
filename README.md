@@ -1,6 +1,6 @@
 # Pa11y Lint Config
 
-Linter configurations for Pa11y projects. This module should be used to ensure that the Pa11y coding style is consistent across all of our repositories.
+Linter configurations for Pa11y projects. We use this [ESLint shareable config] to ensure Pa11y's coding style remains consistent across our repositories.
 
 [![NPM version][shield-npm]][info-npm]
 [![Build status][shield-build]][info-build]
@@ -10,7 +10,6 @@ Linter configurations for Pa11y projects. This module should be used to ensure t
 
 - [Requirements](#requirements)
 - [Usage](#usage)
-  - [ESLint](#eslint)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -18,38 +17,27 @@ Linter configurations for Pa11y projects. This module should be used to ensure t
 
 This library requires [Node.js] 18 or above.
 
-## Usage
+## Usage 
 
-Pa11y Lint Config provides some linter config files which can be included in your project.
-
-### ESLint
-
-To use the [ESLint] config files, first install this module and ESLint, saving them to development dependencies:
+To include these config files in your project, first install [ESLint] and this module, saving them to development dependencies. For example, using npm:
 
 ```sh
 npm install --save-dev eslint pa11y-lint-config
 ```
 
-Now you should create `.eslintrc.js` and `.eslintignore` files in your project root. The command below provides some defaults which should be enough for most new Pa11y projects:
+Now create the files `.eslintrc.js` and `.eslintignore` files in your project root. The following command will create the two files and populate them with sensible settings for a new Pa11y project:
 
 ```sh
 printf "coverage\n" > .eslintignore
 printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es2017');\n" > .eslintrc.js
 ```
 
-If your project uses ES5 syntax (should mostly be browser or legacy projects), then you'll need to include `eslint/legacy` instead of `eslint/2015`:
+Other labels can be provided in place of `eslint/es2017` above:
 
-```sh
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/legacy');\n" > .eslintrc.js
-```
+1. `es2015`, for an ES2015/ES6 project, foregoing the use of more recent syntax additions such as `async`
+1. `es2009`, for an ES2009/ES5 project, most likely to be a legacy client-side codebase
 
-If your project uses more modern syntax (including `async`/`await`), then you'll need to include `eslint/2017` instead of `eslint/2015`:
-
-```sh
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/2017');\n" > .eslintrc.js
-```
-
-If your project contains a mix of ES6 and ES5 (e.g. Node.js and browser) then you can include different config files in each directory.
+A project which contains more than one standard, for example ES2017 for the server and ES2015 for the browser, can support each required standard by including a different config file in each relevant subdirectory.
 
 ## Contributing
 
@@ -73,6 +61,7 @@ Copyright &copy; 2023, Team Pa11y
 [eslint]: http://eslint.org/
 [issues]: https://github.com/pa11y/pa11y-lint-config/issues
 [node.js]: https://nodejs.org/
+[eslint shareable config]: https://eslint.org/docs/latest/extend/shareable-configs
 
 [info-license]: LICENSE
 [info-npm]: https://www.npmjs.com/package/pa11y-ci
