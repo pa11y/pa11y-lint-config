@@ -34,7 +34,7 @@ Now you should create `.eslintrc.js` and `.eslintignore` files in your project r
 
 ```sh
 printf "coverage\n" > .eslintignore
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es2015');\n" > .eslintrc.js
+printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es2017');\n" > .eslintrc.js
 ```
 
 If your project uses ES5 syntax (should mostly be browser or legacy projects), then you'll need to include `eslint/legacy` instead of `eslint/2015`:
