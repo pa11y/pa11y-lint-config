@@ -1,4 +1,3 @@
-
 # Pa11y Lint Config
 
 Linter configurations for Pa11y projects. This module should be used to ensure that the Pa11y coding style is consistent across all of our repositories.
@@ -7,7 +6,6 @@ Linter configurations for Pa11y projects. This module should be used to ensure t
 [![Build status][shield-build]][info-build]
 [![LGPL-3.0 licensed][shield-license]][info-license]
 
-
 ## Table Of Contents
 
 - [Requirements](#requirements)
@@ -15,7 +13,6 @@ Linter configurations for Pa11y projects. This module should be used to ensure t
   - [ESLint](#eslint)
 - [Contributing](#contributing)
 - [License](#license)
-
 
 ## Requirements
 
