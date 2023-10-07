@@ -48,7 +48,7 @@ If you're ready to contribute some code, clone this repo locally and commit your
 Please check that everything works by running the following before opening a <abbr title="pull request">PR</abbr>:
 
 ```sh
-make ci
+npm test
 ```
 
 ## Licence

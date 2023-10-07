@@ -19,7 +19,7 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "make ci"
+    "test": "eslint ."
   },
   "files": [
     "eslint"

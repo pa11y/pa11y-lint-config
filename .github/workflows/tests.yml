@@ -28,4 +28,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run tests
-        run: make verify
+        run: npm test
