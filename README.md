@@ -54,7 +54,6 @@ printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/2017
 
 If your project contains a mix of ES6 and ES5 (e.g. Node.js and browser) then you can include different config files in each directory.
 
-
 ## Contributing
 
 There are many ways to contribute to Pa11y Lint Config, we cover these in the [contributing guide](CONTRIBUTING.md) for this repo.
@@ -67,11 +66,10 @@ Please check that everything works by running the following before opening a <ab
 make ci
 ```
 
-
 ## Licence
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
-Copyright &copy; 2020, Team Pa11y
+Copyright &copy; 2023, Team Pa11y
 
 
 
