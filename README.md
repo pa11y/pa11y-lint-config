@@ -63,7 +63,7 @@ Copyright &copy; 2023, Team Pa11y
 [node.js]: https://nodejs.org/
 
 [info-license]: LICENSE
-[info-npm]: https://www.npmjs.com/package/pa11y-ci
+[info-npm]: https://www.npmjs.com/package/pa11y-lint-config
 [info-build]: https://travis-ci.org/pa11y/pa11y-lint-config
 [shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue.svg
 [shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config.svg
