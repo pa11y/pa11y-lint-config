@@ -32,7 +32,7 @@ printf "coverage\n" > .eslintignore
 printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es2017');\n" > .eslintrc.js
 ```
 
-Other labels can be provided in place of `eslint/es2017` above:
+Two other standards can replace `es2017` above:
 
 1. `es2015`, for an ES2015/ES6 project, forgoing the use of more recent syntax additions such as `async`
 1. `es2009`, for an ES2009/ES5 project, such as an older client-side codebase
