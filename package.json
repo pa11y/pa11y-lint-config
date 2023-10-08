@@ -17,7 +17,7 @@
   "devDependencies": {
     "eslint": "^8.51.0"
   },
-  "main": "./eslintrc.js",
+  "main": "./.eslintrc.js",
   "scripts": {
     "test": "eslint ."
   },
