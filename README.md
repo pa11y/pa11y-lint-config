@@ -25,7 +25,7 @@ To include these config files in your project, first install [ESLint] and this m
 npm install --save-dev eslint pa11y-lint-config
 ```
 
-Now create the files `.eslintrc.js` and `.eslintignore` files in your project root. The following command will create the two files and populate them with sensible settings for a new Pa11y project:
+Now create the files `.eslintrc.js` and `.eslintignore` in your project root. The following command will create both files and populate them with sensible settings for a new Pa11y project:
 
 ```sh
 printf "coverage\n" > .eslintignore
