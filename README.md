@@ -1,6 +1,6 @@
 # Pa11y Lint Config
 
-Linter configurations for Pa11y projects. We use this [ESLint shareable config] to ensure Pa11y's coding style remains consistent across our repositories.
+Linter configurations for Pa11y projects. We use these configurations to ensure Pa11y's coding style remains consistent across our repositories.
 
 [![NPM version][shield-npm]][info-npm]
 [![Build status][shield-build]][info-build]
@@ -61,7 +61,6 @@ Copyright &copy; 2023, Team Pa11y
 [eslint]: http://eslint.org/
 [issues]: https://github.com/pa11y/pa11y-lint-config/issues
 [node.js]: https://nodejs.org/
-[eslint shareable config]: https://eslint.org/docs/latest/extend/shareable-configs
 
 [info-license]: LICENSE
 [info-npm]: https://www.npmjs.com/package/pa11y-ci
