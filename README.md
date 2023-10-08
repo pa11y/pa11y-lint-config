@@ -17,7 +17,7 @@ Linter configurations for Pa11y projects. We use these configurations to ensure 
 
 This library requires [Node.js] 18 or above.
 
-## Usage 
+## Usage
 
 To include these config files in your project, first install [ESLint] and this module, saving them to development dependencies. For example, using npm:
 
@@ -34,8 +34,8 @@ printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es20
 
 Other labels can be provided in place of `eslint/es2017` above:
 
-1. `es2015`, for an ES2015/ES6 project, foregoing the use of more recent syntax additions such as `async`
-1. `es2009`, for an ES2009/ES5 project, most likely to be a legacy client-side codebase
+1. `es2015`, for an ES2015/ES6 project, forgoing the use of more recent syntax additions such as `async`
+1. `es2009`, for an ES2009/ES5 project, such as an older client-side codebase
 
 A project which contains more than one standard, for example ES2017 for the server and ES2015 for the browser, can support each required standard by including a different config file in each relevant subdirectory.
 
