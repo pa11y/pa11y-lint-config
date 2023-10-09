@@ -4,7 +4,7 @@ Linter configurations for Pa11y projects. We use these configurations to ensure 
 
 [![Latest version published to npm][shield-npm]][info-npm]
 [![Node.js version support][shield-node]][info-node]
-[![ESLint version used][shield-eslint]][shield-eslint]
+[![ESLint version target][shield-eslint]][eslint]
 [![Build status][shield-build]][info-build]
 [![LGPL-3.0 licensed][shield-license]][info-license]
 
