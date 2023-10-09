@@ -2,7 +2,9 @@
 
 Linter configurations for Pa11y projects. We use these configurations to ensure Pa11y's coding style remains consistent across our repositories.
 
-[![NPM version][shield-npm]][info-npm]
+[![Latest version published to npm][shield-npm]][info-npm]
+[![Node.js version support][shield-node]][info-node]
+[![ESLint version target][shield-eslint]][eslint]
 [![Build status][shield-build]][info-build]
 [![LGPL-3.0 licensed][shield-license]][info-license]
 
@@ -62,9 +64,12 @@ Copyright &copy; 2023, Team Pa11y
 [issues]: https://github.com/pa11y/pa11y-lint-config/issues
 [node.js]: https://nodejs.org/
 
+[info-build]: https://github.com/pa11y/pa11y-lint-config/actions/workflows/tests.yml
 [info-license]: LICENSE
+[info-node]: package.json
 [info-npm]: https://www.npmjs.com/package/pa11y-lint-config
-[info-build]: https://travis-ci.org/pa11y/pa11y-lint-config
-[shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue.svg
-[shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config.svg
-[shield-build]: https://img.shields.io/travis/pa11y/pa11y-lint-config/master.svg
+[shield-build]: https://github.com/pa11y/pa11y-lint-config/actions/workflows/tests.yml/badge.svg
+[shield-eslint]: https://img.shields.io/npm/dependency-version/pa11y-lint-config/dev/eslint
+[shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue
+[shield-node]: https://img.shields.io/node/v/pa11y-lint-config
+[shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config
