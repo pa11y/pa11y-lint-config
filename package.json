@@ -2,28 +2,24 @@
   "name": "pa11y-lint-config",
   "version": "2.0.0",
   "description": "Linter configurations for Pa11y projects",
-  "keywords": [],
   "author": "Team Pa11y",
   "contributors": [
     "Rowan Manning (http://rowanmanning.com/)",
     "José Bolos (https://github.com/josebolos)"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pa11y/lint-config.git"
-  },
-  "homepage": "https://github.com/pa11y/lint-config",
-  "bugs": "https://github.com/pa11y/lint-config/issues",
+  "repository": "github:pa11y/pa11y-lint-config",
+  "homepage": "https://github.com/pa11y/pa11y-lint-config",
+  "bugs": "https://github.com/pa11y/pa11y-lint-config/issues",
   "license": "LGPL-3.0",
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "devDependencies": {
-    "eslint": "^7.27.0"
+    "eslint": "^8.51.0"
   },
-  "main": "./index.js",
+  "main": "./.eslintrc.js",
   "scripts": {
-    "test": "make ci"
+    "test": "eslint ."
   },
   "files": [
     "eslint"

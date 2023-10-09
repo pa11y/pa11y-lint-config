@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./eslint/es6');
+module.exports = require('./eslint/es2017');
