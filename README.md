@@ -69,4 +69,5 @@ Copyright &copy; 2023, Team Pa11y
 [info-npm]: https://www.npmjs.com/package/pa11y-lint-config
 [shield-build]: https://github.com/pa11y/pa11y-lint-config/actions/workflows/tests.yml/badge.svg
 [shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue.svg
+[shield-node]: https://img.shields.io/node/v/pa11y-lint-config.svg
 [shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config.svg
