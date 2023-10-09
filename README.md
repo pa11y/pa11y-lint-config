@@ -4,6 +4,7 @@ Linter configurations for Pa11y projects. We use these configurations to ensure 
 
 [![Latest version published to npm][shield-npm]][info-npm]
 [![Node.js version support][shield-node]][info-node]
+[![ESLint version used][shield-eslint]][shield-eslint]
 [![Build status][shield-build]][info-build]
 [![LGPL-3.0 licensed][shield-license]][info-license]
 
@@ -68,6 +69,7 @@ Copyright &copy; 2023, Team Pa11y
 [info-node]: package.json
 [info-npm]: https://www.npmjs.com/package/pa11y-lint-config
 [shield-build]: https://github.com/pa11y/pa11y-lint-config/actions/workflows/tests.yml/badge.svg
+[shield-eslint]: https://img.shields.io/npm/dependency-version/pa11y-lint-config/dev/eslint
 [shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue.svg
 [shield-node]: https://img.shields.io/node/v/pa11y-lint-config.svg
 [shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config.svg
