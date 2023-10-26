@@ -53,6 +53,10 @@ Please check that everything works by running the following before opening a <ab
 npm test
 ```
 
+## Support
+
+When we release a new major version we will continue to support the previous major version for 6 months. This support will be limited to fixes for critical bugs and security issues.
+
 ## Licence
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
