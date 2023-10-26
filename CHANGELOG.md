@@ -1,6 +1,16 @@
 
 # Changelog
 
+## 3.0.0 (2023-10-26)
+
+* Support current Node.js LTS (18, 20)
+* Update ESLint version to `^8.51.0`
+* Set es2017 as default
+* Drop `es2015`'s alias `es6`
+* Drop `legacy`'s alias `es5`
+* Rename `legacy` to `es2009`
+* Add support policy
+
 ## 2.0.0 (2021-05-26)
 
 * Update Node requirements to LTS
