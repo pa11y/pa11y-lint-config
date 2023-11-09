@@ -15,12 +15,13 @@
     "node": ">=18"
   },
   "devDependencies": {
-    "eslint": "^8.51.0"
+    "eslint": "^8.51.0",
+    "eslint-find-rules": "^4.1.0"
   },
   "main": "./.eslintrc.js",
   "main": "./index.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint . && eslint-find-rules --deprecated index.js"
   },
   "files": [
     "eslint",
