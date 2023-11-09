@@ -42,7 +42,6 @@ module.exports = {
 		'no-prototype-builtins': 'error',
 		'no-template-curly-in-string': 'error',
 		'no-unsafe-negation': 'error',
-		'valid-jsdoc': 'warn',
 
 		// Good practices
 		'accessor-pairs': 'error',
@@ -100,7 +99,6 @@ module.exports = {
 		'no-proto': 'error',
 		'no-restricted-properties': 'error',
 		'no-return-assign': 'error',
-		'no-return-await': 'error',
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
@@ -356,7 +354,6 @@ module.exports = {
 				allowTemplateLiterals: true
 			}
 		],
-		'require-jsdoc': 'off',
 		semi: 'error',
 		'semi-spacing': 'error',
 		'sort-keys': 'off',
