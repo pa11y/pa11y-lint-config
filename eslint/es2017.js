@@ -243,13 +243,6 @@ module.exports = {
 			'unix'
 		],
 		'lines-around-comment': 'error',
-		'lines-around-directive': [
-			'error',
-			{
-				before: 'never',
-				after: 'always'
-			}
-		],
 		'max-depth': [
 			'warn',
 			{
@@ -341,6 +334,19 @@ module.exports = {
 			'error',
 			{
 				classes: 'always'
+			}
+		],
+		'padding-line-between-statements': [
+			'error',
+			{
+				blankLine: 'always',
+				prev: 'directive',
+				next: '*'
+			},
+			{
+				blankLine: 'any',
+				prev: 'directive',
+				next: 'directive'
 			}
 		],
 		'quote-props': [
