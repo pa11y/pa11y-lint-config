@@ -298,7 +298,7 @@ module.exports = {
 		'no-multiple-empty-lines': 'error',
 		'no-negated-condition': 'error',
 		'no-nested-ternary': 'error',
-		'no-new-object': 'error',
+		'no-object-constructor': 'error',
 		'no-plusplus': 'error',
 		'no-restricted-syntax': 'error',
 		'no-tabs': 'off',
