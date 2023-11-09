@@ -25,5 +25,11 @@
   "files": [
     "eslint",
     "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "pa11y",
+    "javascript",
+    "es2020"
   ]
 }
