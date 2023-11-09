@@ -7,7 +7,7 @@ module.exports = {
 		browser: true
 	},
 	parserOptions: {
-		ecmaVersion: 2017
+		ecmaVersion: 2020
 	},
 	globals: {
 		after: true,
@@ -288,11 +288,11 @@ module.exports = {
 		'no-array-constructor': 'error',
 		'no-bitwise': 'error',
 		'no-continue': 'error',
-		'no-inline-comments': 'off',
+		'no-inline-comments': 'warn',
 		'no-lonely-if': 'error',
 		'no-mixed-operators': 'error',
 		'no-mixed-spaces-and-tabs': 'error',
-		'no-multi-assign': 'off',
+		'no-multi-assign': 'warn',
 		'no-multiple-empty-lines': 'error',
 		'no-negated-condition': 'error',
 		'no-nested-ternary': 'error',
