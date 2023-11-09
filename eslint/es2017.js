@@ -1,20 +1,14 @@
 'use strict';
 
 module.exports = {
-
-	// Environment
 	env: {
 		es6: true,
 		node: true,
 		browser: true
 	},
-
-	// Parser options
 	parserOptions: {
 		ecmaVersion: 2017
 	},
-
-	// Allowed global variables
 	globals: {
 		after: true,
 		afterEach: true,
@@ -25,7 +19,13 @@ module.exports = {
 	},
 
 	// The lint rules
-	extends: 'eslint:recommended',
+	// ESLint reference: http://eslint.org/docs/rules
+	// Node plugin's reference: https://github.com/eslint-community/eslint-plugin-n
+
+	extends: [
+		'eslint:recommended',
+		'plugin:n/recommended'
+	],
 	rules: {
 
 		// Possible Errors
@@ -147,18 +147,16 @@ module.exports = {
 		'no-undefined': 'off',
 		'no-use-before-define': 'off',
 
-		// Node.js and CommonJS
-		// http://eslint.org/docs/rules/#nodejs-and-commonjs
-		'callback-return': 'error',
-		'global-require': 'off',
-		'handle-callback-err': 'error',
-		'no-mixed-requires': 'error',
-		'no-new-require': 'error',
-		'no-path-concat': 'error',
-		'no-process-env': 'off',
-		'no-process-exit': 'off',
-		'no-restricted-modules': 'error',
-		'no-sync': 'off',
+		// Node.js (eslint-plugin-n)
+		'n/callback-return': 'error',
+		'n/global-require': 'off',
+		'n/handle-callback-err': 'error',
+		'n/no-mixed-requires': 'error',
+		'n/no-new-require': 'error',
+		'n/no-path-concat': 'error',
+		'n/no-process-env': 'off',
+		'n/no-process-exit': 'off',
+		'n/no-sync': 'off',
 
 		// Stylistic Issues
 		// http://eslint.org/docs/rules/#stylistic-issues
