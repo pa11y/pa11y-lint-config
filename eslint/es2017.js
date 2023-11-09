@@ -1,6 +1,5 @@
 'use strict';
 
-// Export ESLint config
 module.exports = {
 
 	// Environment
@@ -140,7 +139,6 @@ module.exports = {
 		// Variables
 		// http://eslint.org/docs/rules/#variables
 		'init-declarations': 'off',
-		'no-catch-shadow': 'error',
 		'no-label-var': 'error',
 		'no-restricted-globals': 'error',
 		'no-shadow': 'warn',
