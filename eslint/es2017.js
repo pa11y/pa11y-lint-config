@@ -408,7 +408,10 @@ module.exports = {
 			}
 		],
 		'prefer-const': 'error',
-		'prefer-destructuring': 'off',
+		'prefer-destructuring': ['warn', {
+			object: true,
+			array: false
+		}],
 		'prefer-numeric-literals': 'error',
 		'prefer-rest-params': 'error',
 		'prefer-spread': 'error',
