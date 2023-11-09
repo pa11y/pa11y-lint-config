@@ -18,10 +18,12 @@
     "eslint": "^8.51.0"
   },
   "main": "./.eslintrc.js",
+  "main": "./index.js",
   "scripts": {
     "test": "eslint ."
   },
   "files": [
-    "eslint"
+    "eslint",
+    "index.js"
   ]
 }
