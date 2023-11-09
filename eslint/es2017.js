@@ -195,7 +195,7 @@ module.exports = {
 				allowArrowFunctions: true
 			}
 		],
-		'id-blacklist': [
+		'id-denylist': [
 			'error',
 			'cb',
 			'e',
