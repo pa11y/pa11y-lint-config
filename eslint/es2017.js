@@ -28,8 +28,7 @@ module.exports = {
 	],
 	rules: {
 
-		// Possible Errors
-		// http://eslint.org/docs/rules/#possible-errors
+		// Possible errors
 		'no-await-in-loop': 'off',
 		'no-compare-neg-zero': 'error',
 		'no-console': 'off',
@@ -45,8 +44,7 @@ module.exports = {
 		'no-unsafe-negation': 'error',
 		'valid-jsdoc': 'warn',
 
-		// Best Practices
-		// http://eslint.org/docs/rules/#best-practices
+		// Good practices
 		'accessor-pairs': 'error',
 		'array-callback-return': 'error',
 		'block-scoped-var': 'error',
@@ -130,14 +128,12 @@ module.exports = {
 		],
 
 		// Strict Mode
-		// http://eslint.org/docs/rules/#strict-mode
 		strict: [
 			'warn',
 			'safe'
 		],
 
 		// Variables
-		// http://eslint.org/docs/rules/#variables
 		'init-declarations': 'off',
 		'no-label-var': 'error',
 		'no-restricted-globals': 'error',
@@ -159,7 +155,6 @@ module.exports = {
 		'n/no-sync': 'off',
 
 		// Stylistic Issues
-		// http://eslint.org/docs/rules/#stylistic-issues
 		'array-bracket-spacing': 'error',
 		'block-spacing': 'error',
 		'brace-style': [
@@ -390,7 +385,6 @@ module.exports = {
 		'wrap-regex': 'off',
 
 		// ECMAScript 6
-		// http://eslint.org/docs/rules/#ecmascript-6
 		'arrow-body-style': 'off',
 		'arrow-parens': [
 			'error',
