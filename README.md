@@ -21,11 +21,13 @@ This library requires [Node.js] 18 or above.
 
 ## Usage
 
-To include these config files in your project, first install [ESLint] and this module, saving them to development dependencies. For example, using npm:
+To include these config files in your project, install this module as a development dependency. Using npm:
 
 ```sh
-npm install --save-dev eslint pa11y-lint-config
+npm install --save-dev pa11y-lint-config
 ```
+
+The logging will mention any further peer dependencies required.
 
 Now create the files `.eslintrc.js` and `.eslintignore` in your project root. The following command will create both files and populate them with sensible settings for a new Pa11y project:
 
