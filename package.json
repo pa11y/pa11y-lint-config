@@ -1,5 +1,5 @@
 {
-  "name": "pa11y-lint-config",
+  "name": "eslint-config-pa11y",
   "version": "3.0.0",
   "description": "Linter configurations for Pa11y projects",
   "author": "Team Pa11y",
