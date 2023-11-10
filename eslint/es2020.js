@@ -1,18 +1,14 @@
 'use strict';
 
-// Export ESLint config
 module.exports = {
-
-	// Environment
 	env: {
+		es6: true,
 		node: true,
 		browser: true
 	},
-
-	// Parser options
-	parserOptions: {},
-
-	// Allowed global variables
+	parserOptions: {
+		ecmaVersion: 2020
+	},
 	globals: {
 		after: true,
 		afterEach: true,
@@ -23,11 +19,16 @@ module.exports = {
 	},
 
 	// The lint rules
-	extends: 'eslint:recommended',
+	// ESLint reference: http://eslint.org/docs/rules
+	// Node plugin's reference: https://github.com/eslint-community/eslint-plugin-n
+
+	extends: [
+		'eslint:recommended',
+		'plugin:n/recommended'
+	],
 	rules: {
 
-		// Possible Errors
-		// http://eslint.org/docs/rules/#possible-errors
+		// Possible errors
 		'no-await-in-loop': 'off',
 		'no-compare-neg-zero': 'error',
 		'no-console': 'off',
@@ -41,10 +42,8 @@ module.exports = {
 		'no-prototype-builtins': 'error',
 		'no-template-curly-in-string': 'error',
 		'no-unsafe-negation': 'error',
-		'valid-jsdoc': 'warn',
 
-		// Best Practices
-		// http://eslint.org/docs/rules/#best-practices
+		// Good practices
 		'accessor-pairs': 'error',
 		'array-callback-return': 'error',
 		'block-scoped-var': 'error',
@@ -100,7 +99,6 @@ module.exports = {
 		'no-proto': 'error',
 		'no-restricted-properties': 'error',
 		'no-return-assign': 'error',
-		'no-return-await': 'error',
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
@@ -128,16 +126,13 @@ module.exports = {
 		],
 
 		// Strict Mode
-		// http://eslint.org/docs/rules/#strict-mode
 		strict: [
-			'error',
+			'warn',
 			'safe'
 		],
 
 		// Variables
-		// http://eslint.org/docs/rules/#variables
 		'init-declarations': 'off',
-		'no-catch-shadow': 'error',
 		'no-label-var': 'error',
 		'no-restricted-globals': 'error',
 		'no-shadow': 'warn',
@@ -146,21 +141,18 @@ module.exports = {
 		'no-undefined': 'off',
 		'no-use-before-define': 'off',
 
-		// Node.js and CommonJS
-		// http://eslint.org/docs/rules/#nodejs-and-commonjs
-		'callback-return': 'error',
-		'global-require': 'off',
-		'handle-callback-err': 'error',
-		'no-mixed-requires': 'error',
-		'no-new-require': 'error',
-		'no-path-concat': 'error',
-		'no-process-env': 'off',
-		'no-process-exit': 'off',
-		'no-restricted-modules': 'error',
-		'no-sync': 'off',
+		// Node.js (eslint-plugin-n)
+		'n/callback-return': 'error',
+		'n/global-require': 'off',
+		'n/handle-callback-err': 'error',
+		'n/no-mixed-requires': 'error',
+		'n/no-new-require': 'error',
+		'n/no-path-concat': 'error',
+		'n/no-process-env': 'off',
+		'n/no-process-exit': 'off',
+		'n/no-sync': 'off',
 
 		// Stylistic Issues
-		// http://eslint.org/docs/rules/#stylistic-issues
 		'array-bracket-spacing': 'error',
 		'block-spacing': 'error',
 		'brace-style': [
@@ -203,7 +195,7 @@ module.exports = {
 				allowArrowFunctions: true
 			}
 		],
-		'id-blacklist': [
+		'id-denylist': [
 			'error',
 			'cb',
 			'e',
@@ -251,13 +243,6 @@ module.exports = {
 			'unix'
 		],
 		'lines-around-comment': 'error',
-		'lines-around-directive': [
-			'error',
-			{
-				before: 'never',
-				after: 'always'
-			}
-		],
 		'max-depth': [
 			'warn',
 			{
@@ -299,21 +284,19 @@ module.exports = {
 		'multiline-ternary': 'off',
 		'new-cap': 'error',
 		'new-parens': 'error',
-		'newline-after-var': 'off',
-		'newline-before-return': 'off',
 		'newline-per-chained-call': 'off',
 		'no-array-constructor': 'error',
 		'no-bitwise': 'error',
 		'no-continue': 'error',
-		'no-inline-comments': 'off',
+		'no-inline-comments': 'warn',
 		'no-lonely-if': 'error',
 		'no-mixed-operators': 'error',
 		'no-mixed-spaces-and-tabs': 'error',
-		'no-multi-assign': 'off',
+		'no-multi-assign': 'warn',
 		'no-multiple-empty-lines': 'error',
 		'no-negated-condition': 'error',
 		'no-nested-ternary': 'error',
-		'no-new-object': 'error',
+		'no-object-constructor': 'error',
 		'no-plusplus': 'error',
 		'no-restricted-syntax': 'error',
 		'no-tabs': 'off',
@@ -351,6 +334,19 @@ module.exports = {
 				classes: 'always'
 			}
 		],
+		'padding-line-between-statements': [
+			'error',
+			{
+				blankLine: 'always',
+				prev: 'directive',
+				next: '*'
+			},
+			{
+				blankLine: 'any',
+				prev: 'directive',
+				next: 'directive'
+			}
+		],
 		'quote-props': [
 			'error',
 			'as-needed'
@@ -362,7 +358,6 @@ module.exports = {
 				allowTemplateLiterals: true
 			}
 		],
-		'require-jsdoc': 'off',
 		semi: 'error',
 		'semi-spacing': 'error',
 		'sort-keys': 'off',
@@ -370,7 +365,11 @@ module.exports = {
 		'space-before-blocks': 'error',
 		'space-before-function-paren': [
 			'error',
-			'never'
+			{
+				anonymous: 'never',
+				named: 'never',
+				asyncArrow: 'always'
+			}
 		],
 		'space-in-parens': [
 			'error',
@@ -387,7 +386,6 @@ module.exports = {
 		'wrap-regex': 'off',
 
 		// ECMAScript 6
-		// http://eslint.org/docs/rules/#ecmascript-6
 		'arrow-body-style': 'off',
 		'arrow-parens': [
 			'error',
@@ -401,15 +399,23 @@ module.exports = {
 		'no-useless-computed-key': 'error',
 		'no-useless-constructor': 'error',
 		'no-useless-rename': 'error',
-		'no-var': 'off',
-		'object-shorthand': 'off',
-		'prefer-arrow-callback': 'off',
-		'prefer-const': 'off',
-		'prefer-destructuring': 'off',
+		'no-var': 'error',
+		'object-shorthand': 'warn',
+		'prefer-arrow-callback': [
+			'error',
+			{
+				allowNamedFunctions: true
+			}
+		],
+		'prefer-const': 'error',
+		'prefer-destructuring': ['warn', {
+			object: true,
+			array: false
+		}],
 		'prefer-numeric-literals': 'error',
-		'prefer-rest-params': 'off',
-		'prefer-spread': 'off',
-		'prefer-template': 'off',
+		'prefer-rest-params': 'error',
+		'prefer-spread': 'error',
+		'prefer-template': 'error',
 		'rest-spread-spacing': 'error',
 		'sort-imports': 'error',
 		'symbol-description': 'error',

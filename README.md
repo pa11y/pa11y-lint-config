@@ -21,25 +21,20 @@ This library requires [Node.js] 18 or above.
 
 ## Usage
 
-To include these config files in your project, first install [ESLint] and this module, saving them to development dependencies. For example, using npm:
+To include these config files in your project, install this module as a development dependency. Using npm:
 
 ```sh
-npm install --save-dev eslint pa11y-lint-config
+npm install --save-dev pa11y-lint-config
 ```
+
+The logging will mention any further peer dependencies required.
 
 Now create the files `.eslintrc.js` and `.eslintignore` in your project root. The following command will create both files and populate them with sensible settings for a new Pa11y project:
 
 ```sh
 printf "coverage\n" > .eslintignore
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config/eslint/es2017');\n" > .eslintrc.js
+printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config');\n" > .eslintrc.js
 ```
-
-Two other standards can replace `es2017` above:
-
-1. `es2015`, for an ES2015/ES6 project, forgoing the use of more recent syntax additions such as `async`
-1. `es2009`, for an ES2009/ES5 project, such as an older client-side codebase
-
-A project which contains more than one standard, for example ES2017 for the server and ES2015 for the browser, can support each required standard by including a different config file in each relevant subdirectory.
 
 ## Contributing
 
@@ -53,6 +48,34 @@ Please check that everything works by running the following before opening a <ab
 npm test
 ```
 
+### Testing the GitHub Actions workflows
+
+This project's GitHub Actions workflows can be tested locally using [nektos/act](https://github.com/nektos/act), which can be installed with Homebrew:
+
+```sh
+brew install act
+```
+
+To run the testing workflow locally:
+
+```sh
+act
+```
+
+To validate the testing workflow, without running it:
+
+```sh
+act --dryrun
+```
+
+To validate the publishing workflow:
+
+```sh
+act --dryrun release
+```
+
+Add `--verbose` to any `act` command for more output.
+
 ## Support
 
 When we release a new major version we will continue to support the previous major version for 6 months. This support will be limited to fixes for critical bugs and security issues.
@@ -61,7 +84,6 @@ When we release a new major version we will continue to support the previous maj
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
 Copyright &copy; 2023, Team Pa11y
-
 
 
 [eslint]: http://eslint.org/

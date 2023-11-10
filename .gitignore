@@ -1,2 +1,8 @@
+# npm debris
 node_modules
 npm-debug.log
+/package
+*.tgz
+
+# Editors
+.vscode

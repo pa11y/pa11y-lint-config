@@ -12,16 +12,29 @@
   "bugs": "https://github.com/pa11y/pa11y-lint-config/issues",
   "license": "LGPL-3.0",
   "engines": {
-    "node": ">=18"
+    "node": "^18.0.0 || ^20.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.51.0"
+    "eslint": "^8.51.0",
+    "eslint-find-rules": "^4.1.0",
+    "eslint-plugin-n": "^16.3.0"
   },
-  "main": "./.eslintrc.js",
+  "peerDependencies": {
+    "eslint": ">= 8",
+    "eslint-plugin-n": ">= 16"
+  },
+  "main": "./index.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint . && eslint-find-rules --deprecated index.js"
   },
   "files": [
-    "eslint"
+    "eslint",
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "pa11y",
+    "javascript",
+    "es2020"
   ]
 }
