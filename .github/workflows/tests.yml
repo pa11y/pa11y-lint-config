@@ -29,12 +29,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - name: Pack the shareable config
+      - name: Pack our shareable config
         run: |
           mkdir ${{ runner.temp }}/packed
           npm pack --pack-destination ${{ runner.temp }}/packed
       
-      - name: Create the client project
+      - name: Create a client project
         working-directory: ${{ runner.temp }}
         run: |
           mkdir some-project
@@ -42,12 +42,12 @@ jobs:
           npm init -y
           touch index.js
 
-      - name: Install the packed shareable config
+      - name: Install our config in the client project
         working-directory: ${{ runner.temp }}/some-project
         run: |
           npm install --save-dev ../packed/*.tgz
 
-      - name: Use the shareable config (also checks peer dependencies)
+      - name: Use shareable config (also checks peer dependencies)
         working-directory: ${{ runner.temp }}/some-project
         run: |
           echo '{ "extends": "pa11y" }' > .eslintrc.json
