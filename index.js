@@ -1,4 +1,4 @@
 'use strict';
 
-module.exports = require('./eslint/es2017');
+module.exports = require('./eslint/es2020');
 
