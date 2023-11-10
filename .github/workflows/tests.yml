@@ -17,3 +17,36 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test
+
+  use-in-a-client-project:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20]    
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - name: Pack the shareable config
+        run: |
+          mkdir ${{ runner.temp }}/packed-eslint-config-pa11y
+          npm pack --pack-destination ${{ runner.temp }}/packed-eslint-config-pa11y
+      
+      - name: Create the client project
+        working-directory: ${{ runner.temp }}
+        run: |
+          mkdir client-project
+          cd client-project
+          npm init -y
+          touch index.js
+
+      - name: Install the packed shareable config
+        working-directory: ${{ runner.temp }}/client-project
+        run: |
+          npm install --save-dev ../packed-eslint-config-pa11y/*.tgz
+          echo '{ "extends": "pa11y" }' > .eslintrc.json
+
+      - name: Check peer dependencies and use the shareable config
+        run: npx --no eslint .
