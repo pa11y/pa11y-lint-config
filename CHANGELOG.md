@@ -3,8 +3,8 @@
 
 ## 4.0.0 (2023-11-13)
 
-* Become [ESLint Shareable Config](https://eslint.org/docs/latest/extend/shareable-configs):
-  * Rename package to `eslint-config-pa11y`
+* Publish package as [ESLint Shareable Config](https://eslint.org/docs/latest/extend/shareable-configs):
+  * Publish as `eslint-config-pa11y`
   * Deprecate all published packages `pa11y-lint-config`
 * Drop configs no longer used by the pa11y org (`es2009`, `es2015`)
 
