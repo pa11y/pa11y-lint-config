@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pa11y",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Linter configurations for Pa11y projects",
   "author": "Team Pa11y",
   "contributors": [
