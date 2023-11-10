@@ -48,6 +48,34 @@ Please check that everything works by running the following before opening a <ab
 npm test
 ```
 
+### Testing the GitHub Actions workflows
+
+This project's GitHub Actions workflows can be tested locally using [nektos/act](https://github.com/nektos/act), which can be installed with Homebrew:
+
+```sh
+brew install act
+```
+
+To run the testing workflow locally:
+
+```sh
+act
+```
+
+To validate the testing workflow, without running it:
+
+```sh
+act --dryrun
+```
+
+To validate the publishing workflow:
+
+```sh
+act --dryrun release
+```
+
+Add `--verbose` to any `act` command for more output.
+
 ## Support
 
 When we release a new major version we will continue to support the previous major version for 6 months. This support will be limited to fixes for critical bugs and security issues.
@@ -56,7 +84,6 @@ When we release a new major version we will continue to support the previous maj
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
 Copyright &copy; 2023, Team Pa11y
-
 
 
 [eslint]: http://eslint.org/
