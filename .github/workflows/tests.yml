@@ -31,8 +31,8 @@ jobs:
       - run: npm ci
       - name: Pack the shareable config
         run: |
-          mkdir ${{ runner.temp }}/packed-eslint-config-pa11y
-          npm pack --pack-destination ${{ runner.temp }}/packed-eslint-config-pa11y
+          mkdir ${{ runner.temp }}/packed
+          npm pack --pack-destination ${{ runner.temp }}/packed
       
       - name: Create the client project
         working-directory: ${{ runner.temp }}
@@ -45,7 +45,7 @@ jobs:
       - name: Install the packed shareable config
         working-directory: ${{ runner.temp }}/client-project
         run: |
-          npm install --save-dev ../packed-eslint-config-pa11y/*.tgz
+          npm install --save-dev ../packed/*.tgz
           echo '{ "extends": "pa11y" }' > .eslintrc.json
 
       - name: Check peer dependencies and use the shareable config
