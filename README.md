@@ -48,6 +48,9 @@ Please check that everything works by running the following before opening a <ab
 npm test
 ```
 
+> [!NOTE]
+> `npm test` also enforces the absence of rules deprecated by ESLint. At present this project's rules are considered fresh by `8.52.0`, but several are marked as deprecated by `8.53.0` and above. For this reason, `package.devDependencies.eslint` should not be allowed to progress further than `8.52.0` until the ruleset is upgraded. A client project that does not enforce the absence of deprecated rules may use a higher version of ESLint.
+
 ### Testing the GitHub Actions workflows
 
 This project's GitHub Actions workflows can be tested locally using [nektos/act](https://github.com/nektos/act), which can be installed with Homebrew:
