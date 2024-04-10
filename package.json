@@ -20,8 +20,8 @@
     "eslint-plugin-n": "^16.3.0"
   },
   "peerDependencies": {
-    "eslint": ">= 8",
-    "eslint-plugin-n": ">= 16"
+    "eslint": "^8.0.0",
+    "eslint-plugin-n": "^16.0.0"
   },
   "main": "./index.js",
   "scripts": {
