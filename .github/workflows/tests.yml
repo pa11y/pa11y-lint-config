@@ -12,8 +12,43 @@ jobs:
         node-version: [18, 20]
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test
+
+  use-in-a-client-project:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20]    
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - name: Pack our shareable config
+        run: |
+          mkdir ${{ runner.temp }}/packed
+          npm pack --pack-destination ${{ runner.temp }}/packed
+      
+      - name: Create a client project
+        working-directory: ${{ runner.temp }}
+        run: |
+          mkdir some-project
+          cd some-project
+          npm init -y
+          touch index.js
+
+      - name: Install our config in the client project
+        working-directory: ${{ runner.temp }}/some-project
+        run: |
+          npm install --save-dev ../packed/*.tgz
+
+      - name: Use shareable config (also checks peer dependencies)
+        working-directory: ${{ runner.temp }}/some-project
+        run: |
+          echo '{ "extends": "pa11y" }' > .eslintrc.json
+          npx --no eslint .
