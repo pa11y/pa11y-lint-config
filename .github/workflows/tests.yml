@@ -50,5 +50,5 @@ jobs:
       - name: Use shareable config (also checks peer dependencies)
         working-directory: ${{ runner.temp }}/some-project
         run: |
-          echo '{ "extends": "pa11y" }' > .eslintrc.json
+          echo '{ "extends": "pa11y" }' > eslint.config.js
           npx --no eslint .
