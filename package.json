@@ -23,13 +23,12 @@
     "eslint": ">= 8",
     "eslint-plugin-n": ">= 16"
   },
-  "main": "./index.js",
+  "main": "./eslint.config.js",
   "scripts": {
     "test": "eslint . && eslint-find-rules --deprecated index.js"
   },
   "files": [
-    "eslint",
-    "index.js"
+    "eslint.config.js"
   ],
   "keywords": [
     "eslint",
