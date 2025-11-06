@@ -15,13 +15,16 @@
     "node": "^18.0.0 || ^20.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.51.0",
-    "eslint-find-rules": "^4.1.0",
-    "eslint-plugin-n": "^16.3.0"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-n": "^17.3.1"
   },
   "peerDependencies": {
     "eslint": ">= 8",
-    "eslint-plugin-n": ">= 16"
+    "eslint-plugin-n": ">= 16",
+    "globals": "^16.5.0",
+    "@eslint/js": "^9.39.1"
   },
   "main": "./eslint.config.js",
   "scripts": {
