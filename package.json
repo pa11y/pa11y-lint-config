@@ -28,6 +28,7 @@
   },
   "main": "./eslint.config.js",
   "scripts": {
+    "inspect": "npx @eslint/config-inspector@latest",
     "test": "eslint ."
   },
   "files": [
