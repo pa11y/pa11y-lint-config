@@ -28,7 +28,7 @@
   },
   "main": "./eslint.config.js",
   "scripts": {
-    "test": "eslint . && eslint-find-rules --deprecated index.js"
+    "test": "eslint ."
   },
   "files": [
     "eslint.config.js"
