@@ -40,12 +40,13 @@ jobs:
           mkdir some-project
           cd some-project
           npm init -y
+          npm install --save eslint
           touch index.js
 
       - name: Install our config in the client project
         working-directory: ${{ runner.temp }}/some-project
         run: |
-          npm install --save-dev ../packed/*.tgz
+          npm install --save ../packed/*.tgz
 
       - name: Use shareable config (also checks peer dependencies)
         working-directory: ${{ runner.temp }}/some-project
