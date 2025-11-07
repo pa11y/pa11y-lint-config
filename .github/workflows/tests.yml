@@ -51,5 +51,6 @@ jobs:
       - name: Use shareable config (also checks peer dependencies)
         working-directory: ${{ runner.temp }}/some-project
         run: |
-          echo '{ "extends": "pa11y" }' > eslint.config.js
+          echo -e "const {defineConfig} = require('eslint/config');\nconst pa11y = require('eslint-config-pa11y');\nmodule.exports = defineConfig([pa11y]);" > eslint.config.js
           npx --no eslint .
+
