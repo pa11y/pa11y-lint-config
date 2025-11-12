@@ -29,13 +29,6 @@ npm install --save-dev eslint-config-pa11y
 
 The logging will mention any further peer dependencies required.
 
-Now create the files `.eslintrc.js` and `.eslintignore` in your project root. The following command will create both files and populate them with sensible settings for a new Pa11y project:
-
-```sh
-printf "coverage\n" > .eslintignore
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config');\n" > .eslintrc.js
-```
-
 ## Contributing
 
 There are many ways to contribute to `eslint-config-pa11y`, we cover these in the [contributing guide](CONTRIBUTING.md) for this repo.
