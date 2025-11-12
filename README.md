@@ -17,7 +17,7 @@ Linter configurations for Pa11y projects. We use these configurations to ensure 
 
 ## Requirements
 
-This library requires [Node.js] 18 or above.
+This library requires [Node.js] 20 or above.
 
 ## Usage
 
