@@ -76,7 +76,7 @@ When we release a new major version we will continue to support the previous maj
 ## Licence
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
-Copyright &copy; 2023-2025, Team Pa11y
+Copyright &copy; 2017-2025, Team Pa11y
 
 
 [eslint]: http://eslint.org/
