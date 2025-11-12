@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20]
+        node-version: [20, 22, 24]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20]    
+        node-version: [20, 22, 24]    
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
@@ -40,15 +40,17 @@ jobs:
           mkdir some-project
           cd some-project
           npm init -y
+          npm install --save eslint
           touch index.js
 
       - name: Install our config in the client project
         working-directory: ${{ runner.temp }}/some-project
         run: |
-          npm install --save-dev ../packed/*.tgz
+          npm install --save ../packed/*.tgz
 
       - name: Use shareable config (also checks peer dependencies)
         working-directory: ${{ runner.temp }}/some-project
         run: |
-          echo '{ "extends": "pa11y" }' > .eslintrc.json
+          echo -e "const {defineConfig} = require('eslint/config');\nconst pa11y = require('eslint-config-pa11y');\nmodule.exports = defineConfig([pa11y]);" > eslint.config.js
           npx --no eslint .
+
