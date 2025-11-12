@@ -7,9 +7,9 @@
     "Rowan Manning (http://rowanmanning.com/)",
     "José Bolos (https://github.com/josebolos)"
   ],
-  "repository": "github:pa11y/pa11y-lint-config",
-  "homepage": "https://github.com/pa11y/pa11y-lint-config",
-  "bugs": "https://github.com/pa11y/pa11y-lint-config/issues",
+  "repository": "github:pa11y/eslint-config-pa11y",
+  "homepage": "https://github.com/pa11y/eslint-config-pa11y",
+  "bugs": "https://github.com/pa11y/eslint-config-pa11y/issues",
   "license": "LGPL-3.0",
   "engines": {
     "node": ">=20"
