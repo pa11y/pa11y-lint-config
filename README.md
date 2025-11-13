@@ -1,4 +1,4 @@
-# Pa11y Lint Config
+# eslint-config-pa11y
 
 Linter configuration for Pa11y projects. We use this configuration to ensure Pa11y's coding style remains consistent across our repositories.
 
