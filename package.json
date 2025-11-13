@@ -1,15 +1,15 @@
 {
   "name": "eslint-config-pa11y",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Linter configurations for Pa11y projects",
   "author": "Team Pa11y",
   "contributors": [
     "Rowan Manning (http://rowanmanning.com/)",
     "José Bolos (https://github.com/josebolos)"
   ],
-  "repository": "github:pa11y/pa11y-lint-config",
-  "homepage": "https://github.com/pa11y/pa11y-lint-config",
-  "bugs": "https://github.com/pa11y/pa11y-lint-config/issues",
+  "repository": "github:pa11y/eslint-config-pa11y",
+  "homepage": "https://github.com/pa11y/eslint-config-pa11y",
+  "bugs": "https://github.com/pa11y/eslint-config-pa11y/issues",
   "license": "LGPL-3.0",
   "engines": {
     "node": ">=20"
@@ -21,10 +21,10 @@
     "eslint-plugin-n": "^17.3.1"
   },
   "peerDependencies": {
+    "@eslint/js": "^9.39.1",
     "eslint": ">= 8",
     "eslint-plugin-n": ">= 16",
-    "globals": "^16.5.0",
-    "@eslint/js": "^9.39.1"
+    "globals": "^16.5.0"
   },
   "main": "./eslint.config.js",
   "scripts": {

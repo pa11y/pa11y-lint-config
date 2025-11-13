@@ -1,6 +1,6 @@
 # Pa11y Lint Config
 
-Linter configurations for Pa11y projects. We use these configurations to ensure Pa11y's coding style remains consistent across our repositories.
+Linter configuration for Pa11y projects. We use this configuration to ensure Pa11y's coding style remains consistent across our repositories.
 
 [![Latest version published to npm][shield-npm]][info-npm]
 [![Node.js version support][shield-node]][info-node]
@@ -17,28 +17,21 @@ Linter configurations for Pa11y projects. We use these configurations to ensure 
 
 ## Requirements
 
-This library requires [Node.js] 18 or above.
+This library requires [Node.js] 20 or above.
 
 ## Usage
 
 To include these config files in your project, install this module as a development dependency. Using npm:
 
 ```sh
-npm install --save-dev pa11y-lint-config
+npm install --save-dev eslint-config-pa11y
 ```
 
 The logging will mention any further peer dependencies required.
 
-Now create the files `.eslintrc.js` and `.eslintignore` in your project root. The following command will create both files and populate them with sensible settings for a new Pa11y project:
-
-```sh
-printf "coverage\n" > .eslintignore
-printf "'use strict';\n\nmodule.exports = require('pa11y-lint-config');\n" > .eslintrc.js
-```
-
 ## Contributing
 
-There are many ways to contribute to Pa11y Lint Config, we cover these in the [contributing guide](CONTRIBUTING.md) for this repo.
+There are many ways to contribute to `eslint-config-pa11y`, we cover these in the [contributing guide](CONTRIBUTING.md) for this repo.
 
 If you're ready to contribute some code, clone this repo locally and commit your code on a new branch.
 
@@ -83,19 +76,19 @@ When we release a new major version we will continue to support the previous maj
 ## Licence
 
 Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
-Copyright &copy; 2023, Team Pa11y
+Copyright &copy; 2017-2025, Team Pa11y
 
 
 [eslint]: http://eslint.org/
-[issues]: https://github.com/pa11y/pa11y-lint-config/issues
+[issues]: https://github.com/pa11y/eslint-config-pa11y/issues
 [node.js]: https://nodejs.org/
 
-[info-build]: https://github.com/pa11y/pa11y-lint-config/actions/workflows/tests.yml
+[info-build]: https://github.com/pa11y/eslint-config-pa11y/actions/workflows/tests.yml
 [info-license]: LICENSE
 [info-node]: package.json
-[info-npm]: https://www.npmjs.com/package/pa11y-lint-config
-[shield-build]: https://github.com/pa11y/pa11y-lint-config/actions/workflows/tests.yml/badge.svg
-[shield-eslint]: https://img.shields.io/npm/dependency-version/pa11y-lint-config/dev/eslint
+[info-npm]: https://www.npmjs.com/package/eslint-config-pa11y
+[shield-build]: https://github.com/pa11y/eslint-config-pa11y/actions/workflows/tests.yml/badge.svg
+[shield-eslint]: https://img.shields.io/npm/dependency-version/eslint-config-pa11y/dev/eslint
 [shield-license]: https://img.shields.io/badge/license-LGPL%203.0-blue
-[shield-node]: https://img.shields.io/node/v/pa11y-lint-config
-[shield-npm]: https://img.shields.io/npm/v/pa11y-lint-config
+[shield-node]: https://img.shields.io/node/v/eslint-config-pa11y
+[shield-npm]: https://img.shields.io/npm/v/eslint-config-pa11y
