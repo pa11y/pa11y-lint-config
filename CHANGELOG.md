@@ -4,11 +4,8 @@
 ## 4.0.0 (2023-11-13)
 
 * Publish package as [ESLint Shareable Config](https://eslint.org/docs/latest/extend/shareable-configs):
-  * Publish as `eslint-config-pa11y`
-  * Deprecate all published packages `pa11y-lint-config`
-* Drop configs no longer used by the pa11y org (`es2009`, `es2015`)
-* Rename sole remaining config to `es2020` and:
-  * Update `ecmaVersion` to `2020` from `2017`
+  * Publish as the flat config `eslint-config-pa11y`
+* Use ES2020, dropping configs no longer used by the pa11y org (`es2009`, `es2015`)
 
 ## 3.0.0 (2023-10-26)
 

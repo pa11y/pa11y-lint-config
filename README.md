@@ -1,4 +1,4 @@
-# Pa11y Lint Config
+# eslint-config-pa11y
 
 Linter configuration for Pa11y projects. We use this configuration to ensure Pa11y's coding style remains consistent across our repositories.
 
@@ -73,9 +73,9 @@ Add `--verbose` to any `act` command for more output.
 
 When we release a new major version we will continue to support the previous major version for 6 months. This support will be limited to fixes for critical bugs and security issues.
 
-## Licence
+## License
 
-Licensed under the [Lesser General Public License (LGPL-3.0)](LICENSE).<br/>
+Licensed under the [Lesser General Public License (LGPL-3.0)][info-license].<br/>
 Copyright &copy; 2017-2025, Team Pa11y
 
 
